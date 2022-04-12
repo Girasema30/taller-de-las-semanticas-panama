@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de las Etiquetas semánticas</title>
+
+    <!--Aquí está el link del ícono de mi página-->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/640px-Flag_of_Panama.svg.png">
+  
+    <!--Aquí está el código style de mi página -->
+    <style>
+
+        /*Aquí está el código style de mi body y demás, en donde pondré las especificaciones generales para mi página o 'mi estilo general y predeterminado'*/
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+        }
+
+        p {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+
+        /*Aquí está el código style de mi header (mi encabezado)*/
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: aquamarine;
+            margin-top: 1em;
+            padding: 4px;
+            text-shadow: 2px 2px rgb(143, 143, 133);
+            color: #ffffff;
+            font-size: 1.5em;
+        }
+
+        /*Aquí está el código style de mi nav (mi lista de vinculos de la página o lista de navegación)*/
+        nav {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: rgba(168, 255, 226, 0.733);
+            padding: 1em;
+            margin-top: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            transition: all 300ms ease;
+            color: blue;
+        }
+
+        /*Aquí está el código style de mi aside*/
+        aside {
+            float: right;
+            width: 35%;
+            height: 25%;
+            background-color: blanchedalmond;
+            margin: 2em;
+            border-radius: 20px;
+        }
+
+        aside h3 {
+            text-align: center;
+            color: #000000;
+        }
+
+        aside a[target="_blank"] { /*Este es el style de los links de mi aside*/
+            text-decoration: none;
+            color: #000000;
+        }
+
+        aside img[title="Panamá Cinta Costera"] {
+            /* width: 314px;
+            height: 200px; */
+            padding: 0.5em 2em 2em 2em;
+            width: 86%;
+        }
+
+        /*Aquí está el código style de mi 'hr' (lo que separará las secciones de mi página)*/
+        hr{
+            color: blue;
+            margin: 10px 2em;
+        }
+
+        /*Aquí está el código style de mis sections*/
+        section {
+            margin: 2em 0px;
+        }
+
+        .section3 h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+        .section4 summary {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+        /*Aquí está código style de mi tabla que contiene mis imágenes*/
+        table > tr > td {
+            width: 50px;
+            height: 45px;
+            text-align: center;
+        }
+
+        table {
+            margin-left: 0 auto;
+            margin-right: 0 auto;
+        }
+
+        .imagenes-table img[title] {
+            width: 365px;
+            height: 270px;
+            margin-left: 0 auto;
+            margin-right: 0 auto;
+            border-radius: 20px;
+        }
+
+        .imagenes-table img[title]:hover {
+            transition: all 300ms ease;
+            box-shadow: 0 20px 28px -10px rgb(143, 143, 133);
+        }
+
+        /*Aquí está el código style de mi footer*/
+        footer {
+            background-color: aquamarine;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        footer a[href] {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        footer a[href]:hover {
+            transition: all 300ms ease;
+            text-shadow: 2px 2px rgb(143, 143, 133);
+            color: #ffffff;
+        }
+
+        footer h2 {
+            text-align: center;
+            padding: 1em;
+            font-weight: bold;
+        }
+
+        footer > h2 a[href="#up"] {
+            text-align: right;
+            color: #ffffff;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px rgb(131, 124, 124);
+        }
+
+    </style>
+    <!--Aquí termina el código style de mi página-->
+
+</head>
+<body>
+
+    <!--Aquí está el header de mi página-->
+    <header id="up">
+        <h1>Panamá</h1>
+    </header>
+
+    <!--Aquí está el nav de mi página-->
+    <nav id="nav">
+       <a href="#footer">Footer</a> |
+       <a href="https://girasema30.github.io/Gira-Examen-Portfolio/" target="_blank">Contact Me</a> | 
+       <a href="#imagenes">Images</a>
+    </nav>
+
+    <!--Aquí está mi Aside 'la parte derecha superior de mi página en la que tendré listas y material no tan relevante', como más información o bibliografías-->
+    <aside>
+        <h3>More information</h3>
+        <ul>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/History_of_Panama" target="_blank">
+                    Historia de Panmá en Wikipedia
+                </a>
+            </li>
+            <li>
+                <a href="https://www.istockphoto.com/es/search/2/image?phrase=panam%C3%A1" target="_blank">
+                    Imagenes de panamá
+                </a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <p>
+            Las viñetas de arriba contienen unos enlaces interesantes, les recomiendo visitarlas.
+        </p>
+
+        <img src="https://www.passporthealthglobal.com/wp-content/uploads/2017/12/advice-vaccines-panama.jpg" alt="Panamá Cinta Costera" title="Panamá Cinta Costera">
+    </aside>
+
+
+    <!--Aquí está mi primer section o 'primera sección de página', en ella hablaré un poco sobre la historia de Panamá-->
+    <section class="section1">
+        <article>
+            <p class="history">
+                The history of Panama includes the long history of the Isthmus of Panama region prior to European colonization, from Pre-Columbian cultures, through the Spanish colonial era, and eventual independence as the modern country of Panama.
+                <br>
+                Prior to the arrival of Europeans, Panama was widely settled by Chibchan, Chocoan, and Cueva peoples, but there is no accurate knowledge of the size of the Pre-Columbian indigenous population. Estimates range as high as two million people. They lived mainly by hunting, gathering edible plants & fruits, growing corn, cacao, and root crops, in small huts made of palm leaves.
+            </p>
+        </article>
+    </section>
+    
+    <hr> <!--Este 'hr' me ayuda a separar el 'section1' del 'section2'-->
+
+     <!--Aquí está mi segundo section o 'segunda sección de página', en ella hablaré un poco sobre la independencia de Panamá-->
+     <section class="section2">
+        <article>
+            <p class="independence">
+                In 1819, New Granada finally achieved freedom from Spain. Panama and the other regions of former New Granada were therefore technically free. Panama considered union with Peru or with Central America in federations that were emerging in the region. Finally it was won over by Gran Columbia's Simón Bolívar, who, after residing in Jacmel, Haiti, was given 2 armies to liberate South America. Bolívar's ambitious project of a Gran Colombia (1819–1830) was taking shape. Then, timing the action with the rest of the Central American isthmus, Panama declared independence in 1821 and joined the southern federation. As the isthmus' central interoceanic traffic zone, as well as the City of Panama had been of great historical importance to the Spanish Empire and subject of direct influence, so, the differences in social and economic status between the more liberal region of Azuero, and the much more royalist and conservative area of Veraguas displayed contrasting loyalties. When the Grito de la Villa de Los Santos independence motion occurred, Veraguas firmly opposed it.    
+            </p>
+        </article>
+    </section>
+    
+    <hr> <!--Este 'hr' me ayuda a separar el 'section2' del 'section3' -->
+
+     <!--Aquí está mi tercer section o 'tercera sección de página', en ella hablaré un poco sobre el canal de Panamá-->
+     <section class="section3">
+        <article>
+            <h3>&rdca; Panama Canal</h3>
+            <p class="panama-canal">
+                Panamanian history which has been shaped by the recurrent theme of transisthmian commerce, looked now at the possibility of a canal to replace the difficult overland route. In 1519, the Spanish crown built a cobbled track joined the oceans, and by 1534, the Chagres River was dredged, facilitating traffic for two-thirds of the way.
+            </p>
+        </article>
+    </section>
+    
+    <hr> <!--Este 'hr' me ayuda a separar el 'section3' del 'section4'-->
+
+     <!--Aquí está mi cuarto section o 'cuarta sección de página', en ella estará el 'detail' en el cual hablaré un poco sobre el primer presidente de Panamá-->
+     <section class="section4">
+
+         <!--Aquí está el código de mi 'detail' que contiene el 'sumary'-->
+        <details>
+            <summary>Who was its firts president?</summary>
+                <p>
+                    Its firts president was Don Pablo Arosemena. In this historic meeting, the first Political Constitution was drawn up, which was approved in February 1904 and which elected the first President of the Republic, Dr. Manuel Amador Guerrero.
+                </p>
+        </details>
+    </section>
+    
+    <hr> <!--Este 'hr' me ayuda a separar el 'section4' del 'section5' que contendrá mi tabla con imagenes-->
+
+    <section class="section5">
+        <table id="imagenes"> <!--Este es el table que contendrá mis imágenes-->
+            <tr>
+                <td>
+                    <figure class="imagenes-table">
+                        <img src="https://grupobimbo-com-assets.s3.amazonaws.com/s3fs-public/marcas/panama.jpeg?VersionId=2KYLa.53OhHE.2nLcN.wABjL7OdhrYl9" title="Barco en el Canal de Panamá">
+                    </figure>
+                </td>
+
+                <th>
+                    <figure class="imagenes-table">
+                        <img src="https://imagenes.laestrella.com.pa/files/image_990_491/uploads/2019/09/30/5d91fe8f5bba2.jpeg" title="Manuel Amador Guerreo, Primer presidente de Panamá">
+                    </figure>
+                </td>
+
+                <td>
+                    <figure class="imagenes-table">
+                        <img src="https://www.ndr.de/nachrichten/info/sendungen/zwischen_hamburg_und_haiti/panama234_v-contentxl.jpg" title="Museo de la Biodiversidad de Panamá">
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </section>
+    
+
+    <!--Aquí está mi footer-->
+    <footer id="footer">
+        <h2>Create by <a href="https://girasema30.github.io/Gira-Examen-Portfolio/" target="_blank">Girasema Cáceres</a>
+            <br>
+            <a href="#up"> <!--Este es el link de enlace que vinculará el footer con el nav, para que el usuario pueda navegar más fácil a través de mi página.-->
+               &rdca; GO UP
+            </a>
+        </h2>
+    </footer>
+
+</body>
+</html>
